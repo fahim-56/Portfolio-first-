@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* shared style  */
@@ -147,7 +146,7 @@ nav .menu a {
 
     text-align: center;
     background-color: #FFF8F3;
-    padding: 131px 156px;
+    /* padding: 131px 156px; */
 }
 
 #about .about-container .about-info {
@@ -306,4 +305,121 @@ footer .footer-container {
 
 .mediaName {
     color: gray
+}
+
+.hide {
+    display: none !important;
+}
+
+@media screen and (max-width:576px) {
+
+    .container {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    header {
+        margin-top: 0px;
+        padding-top: 0px;
+        background-size: auto;
+
+
+        background-color: #FFF8F3;
+        background-image: url(../images/header_bg.png);
+        background-position: bottom right;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .banner-image img {
+        width: 90%;
+    }
+
+    #banner {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #banner .banner-content {
+        text-align: center;
+    }
+
+    #about {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #about,
+    #skills,
+    #resume {
+        padding-top: 40px;
+    }
+
+    .about-container {
+        text-align: center;
+        background-color: #FFF8F3;
+        padding: 0px;
+    }
+
+    .about-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skill-box {
+        flex-direction: column;
+
+    }
+
+    .skills-container .skill-box {
+        padding: 20px;
+    }
+
+
+
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .section-heading {
+        margin-bottom: 0px;
+    }
+
+    .hr hr {
+        margin-left: 0px;
+    }
+
+    footer {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .footer-container .social {
+        margin-top: auto;
+    }
+
+    .footer-container .social p {
+        margin-bottom: 0px;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-container form input[type="text"],
+    .footer-container form textarea {
+        width: 80%;
+        padding: 18px 31px;
+        margin-bottom: 24px;
+        border: none;
+        border-radius: 5px;
+        color: #757575;
+    }
+
 }
