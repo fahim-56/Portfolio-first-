@@ -336,6 +336,18 @@ footer .footer-container {
         flex-direction: column;
     }
 
+
+    nav .menu {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    nav .menu .btn {
+        margin: 0px;
+    }
+
     .banner-image img {
         width: 90%;
     }
